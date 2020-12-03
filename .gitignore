@@ -437,5 +437,6 @@ gradle-app.setting
 
 ### Gradle Patch ###
 **/build/
+**/generated-src/
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,scala,java,gradle,maven,eclipse,linux,windows,macos,python,go
