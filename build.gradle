@@ -40,7 +40,6 @@ sourceSets {
     main {
         java {
             srcDir 'src/main/java'
-            srcDir 'generated-src/main/java'
         }
     }
     test {
