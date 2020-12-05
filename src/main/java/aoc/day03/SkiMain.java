@@ -13,10 +13,6 @@ public class SkiMain {
         totals.add((long) tabogan.run(7, 1));
         totals.add((long) tabogan.run(1, 2));
         System.out.printf("Totals %s%n", totals);
-//        long total = 1;
-//        for(long tot: totals){
-//            total *= tot;
-//        }
         long total = totals.stream()
                 .reduce(1L, (a, b) -> a * b);
         System.out.printf("Total %d%n", total);

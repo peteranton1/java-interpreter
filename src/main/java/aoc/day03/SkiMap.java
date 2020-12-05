@@ -2,7 +2,6 @@ package aoc.day03;
 
 import aoc.resource.ResourceResolver;
 
-import java.util.Comparator;
 import java.util.List;
 
 import static java.util.Comparator.naturalOrder;
@@ -49,11 +48,7 @@ public class SkiMap {
         if (curCol >= maxCol) {
             curCol = curCol - maxCol;
         }
-//        System.out.printf(
-//                "moving to: curRow: %d, curCol: %d",
-//                curRow, curCol);
         char foundChar = mountainMap[curRow][curCol];
-//        System.out.printf(", found: %c%n", foundChar);
         return (foundChar == '#' ? 1 : 0);
     }
 
