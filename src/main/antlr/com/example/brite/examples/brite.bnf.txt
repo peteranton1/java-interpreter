@@ -1,0 +1,65 @@
+atoms for brite
+----------------
+
+builtins:
+
+    lang.module()
+    lang.include()
+    lang.if()
+    lang.elseif()
+    lang.else()
+    lang.call()
+    lang.while()
+    lang.var()
+    lang.val()
+    lang.set()
+    lang.def()
+    lang.empty()
+    lang.map()
+    lang.flatmap()
+    lang.reduce()
+
+plugins:
+    lang.string.concat()
+    lang.bin.hex()
+
+ddl:
+    ddl.type@: "single"|"multiple"|"numeric"|"string"
+    ddl.name@: "xte_respondent_age_years"
+    ddl.values@:
+        01:"Some text"
+        99:"Some text"
+    ddl.open@:
+        01:"Some text"
+
+identifier:
+
+    hello
+    abc_$
+    a.b.c
+    全世界无产者
+
+number:
+
+    123
+    1.23
+    02
+
+string:
+
+    'abc " def'
+    "ain't heard"
+    "\u4e00 other text"
+
+boolean:
+
+    true
+    false
+
+operators:
+
+    ==, >=, <=, !=, +, -, /, *
+
+syntax:
+
+    :{}[]()

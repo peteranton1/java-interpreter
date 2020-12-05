@@ -1,0 +1,25 @@
+{
+  _package_: "a.b.c.z",
+  j123456: {
+    demographics: {
+      hello: {
+        _text_: " I will now ask some questions about your status "
+      },
+      age: {
+        _type_: "Single",
+        _name_: "xte_respondent_age_years",
+        _values_: {
+          "01": "Under 18",
+          "02": "19-30",
+          "03": "31-45",
+          "04": "45-65",
+          "99": "DK/NA"
+        }
+      }
+    },
+    '_if_(!age(01||04))': {
+      _text_: " I will now ask again some questions about your status ",
+      "_if_(age(09))": "call(demographics.age)"
+    }
+  }
+}

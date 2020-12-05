@@ -22,10 +22,11 @@ key
 
 value
    : STRING
+   | IDENTIFIER
+   | LITERAL
    | NUMBER
    | obj
    | arr
-   | LITERAL
    ;
 
 arr

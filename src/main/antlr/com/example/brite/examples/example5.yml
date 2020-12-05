@@ -1,0 +1,38 @@
+module(): a.b.c.z
+
+include():
+  c.d.e.house-d34a: "house"
+
+j123456:
+  demo.graphics:
+    hello:
+      text: " I will now ask some questions about your status "
+
+    age:
+      type!: "Single"
+      name!: "xte_respondent_age_years"
+      values!:
+        01: "Under 18" , "u18"
+        02: "19-30"
+        03: "31-45"
+        04: "45-65"
+        99: "DK/NA"
+
+      extra2:
+        全世界无产者: "联合起来"
+        n1: 1.e2
+        n2: .2e-4
+        Infinity: -Infinity
+        NaN: -NaN
+        true: true
+        false: false
+        \u4e00: "Unicode!"
+
+  'if(!age(01||03))':
+    text: " I will now ask again some questions about your demographics ",
+    'call(demographics.age)'
+    'if(age(09))':
+      'call()':
+        'house.gender'
+        'house.class'
+        'house.fruity'

@@ -1,0 +1,23 @@
+j123456: {
+  demographics: {
+    hello: {
+      .text: """
+      I will now ask some questions about your status
+      """
+    }
+    age: {
+      .type: Single
+      .name: xte_respondent_age_years
+      .values: {
+        "Under 18": "01",
+        "19-30": "02",
+        "31-45": "03",
+        "45-65": "04",
+        "DK/NA": "99"
+      }
+    }
+  }
+  if (!age("01"||"04")) {
+    call(demographics)
+  }
+}
