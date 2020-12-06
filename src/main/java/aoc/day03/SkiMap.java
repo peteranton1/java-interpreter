@@ -14,12 +14,13 @@ public class SkiMap {
     private char[][] mountainMap;
 
     public SkiMap(String inputFile) throws Exception {
-        loadInputFile("aoc/day03/" + inputFile);
+        loadInputFile(inputFile);
     }
 
     private void loadInputFile(String inputFile) throws Exception {
         List<String> lines = new ResourceResolver()
-                .getResourceAsLines(inputFile);
+                .getResourceAsLines(
+                        "aoc/day03/" + inputFile);
         this.curRow = 0;
         this.curCol = 0;
         this.maxCol = lines.stream()
