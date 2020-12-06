@@ -1,6 +1,4 @@
-package aoc.day5;
-
-import aoc.resource.ResourceResolver;
+package aoc.day05;
 
 import java.util.List;
 

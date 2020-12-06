@@ -1,4 +1,4 @@
-package aoc.day5;
+package aoc.day05;
 
 import com.google.common.collect.ImmutableList;
 import org.assertj.core.api.Assertions;
