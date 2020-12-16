@@ -16,8 +16,8 @@ public class BagEntityRepositoryTest {
     @Test
     public void shouldPutAndFindBagEntity() {
         TypeTuple typeTuple = TypeTuple.builder()
-                .tuple1("A")
-                .tuple2("B").build();
+                .t1("A")
+                .t2("B").build();
         BagEntity expected = underTest.findEntity(typeTuple);
         BagEntity actual = underTest.findEntity(typeTuple);
 

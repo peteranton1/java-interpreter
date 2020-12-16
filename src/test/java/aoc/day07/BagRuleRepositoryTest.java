@@ -1,11 +1,11 @@
 package aoc.day07;
 
-import com.google.common.collect.ImmutableSet;
+import com.google.common.collect.ImmutableList;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Set;
+import java.util.List;
 
 public class BagRuleRepositoryTest {
 
@@ -19,8 +19,8 @@ public class BagRuleRepositoryTest {
     @Test
     public void shouldAddAndGetBagRules() {
         TypeTuple typeTuple = TypeTuple.builder()
-                .tuple1("A")
-                .tuple2("B").build();
+                .t1("A")
+                .t2("B").build();
         BagEntity bagEntity = BagEntity.builder()
                 .typeTuple(typeTuple)
                 .build();
@@ -29,9 +29,8 @@ public class BagRuleRepositoryTest {
                 .build();
 
         underTest.addBagRule(bagRule);
-        underTest.addBagRule(bagRule);
-        Set<BagRule> expected = ImmutableSet.of(bagRule);
-        Set<BagRule> actual = underTest.getBagRules();
+        List<BagRule> expected = ImmutableList.of(bagRule);
+        List<BagRule> actual = underTest.getBagRules();
 
         Assertions.assertThat(actual).isEqualTo(expected);
     }
